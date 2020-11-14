@@ -1,47 +1,17 @@
 {
-  "_from": "app-logging",
-  "_id": "app-logging@1.0.0",
-  "_inBundle": false,
-  "_integrity": "sha512-CNS6JRQcTmqe7fGc7HWXkZjQPtsl6hbqyaQA6OSQJRhcXhGKF0lY32iD7daE+4hxMjJuvbxk3UfmpN3NGmOFdQ==",
-  "_location": "/app-logging",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "app-logging",
-    "name": "app-logging",
-    "escapedName": "app-logging",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#DEV:/",
-    "#USER"
-  ],
-  "_resolved": "https://registry.npmjs.org/app-logging/-/app-logging-1.0.0.tgz",
-  "_shasum": "f13ed99ba54678077e354806b3caa8981574b165",
-  "_spec": "app-logging",
-  "_where": "/Users/fastpmp/Desktop/Software/nodejs/custom-logs",
-  "author": {
-    "name": "Alhassan Faisal <alhassanfgh@gmail.com>"
-  },
-  "bugs": {
-    "url": "https://github.com/faisalscientist/app-logging/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
+  "name": "app-logging",
+  "version": "1.0.0",
   "description": "Application development logs",
-  "devDependencies": {
-    "@types/chai": "^4.2.14",
-    "@types/mocha": "^8.0.4",
-    "@types/node": "^7.0.5",
-    "chai": "^4.2.0",
-    "mocha": "^8.2.1",
-    "ts-node": "^8.10.2",
-    "typescript": "^4.0.5"
+  "main": "dist/index.js",
+  "types" : "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/faisalscientist/app-logging#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faisalscientist/app-logging.git"
+  },
   "keywords": [
     "App",
     "Logging",
@@ -54,17 +24,19 @@
     "Emergency",
     "Alert"
   ],
+  "author": "Alhassan Faisal",
   "license": "ISC",
-  "main": "src/index.ts",
-  "name": "app-logging",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/faisalscientist/app-logging.git"
+  "bugs": {
+    "url": "https://github.com/faisalscientist/app-logging/issues"
   },
-  "scripts": {
-    "test": "mocha -r ts-node/register test/**/test.ts",
-    "build": "tsc"
-  },
-  "version": "1.0.0",
-  "type": "module"
+  "homepage": "https://github.com/faisalscientist/app-logging#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^7.0.5",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^4.0.5"
+  }
 }

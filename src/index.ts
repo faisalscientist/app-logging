@@ -40,7 +40,6 @@ export class Log {
         fs.mkdirSync(storagePath)
         fs.openSync(`${storagePath}/app.log`, 'w');
       } else {
-        console.log(!fs.existsSync(`${storagePath}/app.log`));
         if(!fs.existsSync(`${storagePath}/app.log`)){
           fs.openSync(`${storagePath}/app.log`, 'w');
         }
