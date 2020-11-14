@@ -38,6 +38,7 @@ describe('App Logging Test', () => {
   });
   it('should save alert log in /storage/app.log file', () => {
     // Write log
+    
     const logging = new Log();
     logging.alert('alert log message', 'alert log contextualData');
 
