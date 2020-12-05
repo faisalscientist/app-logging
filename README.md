@@ -13,33 +13,65 @@ npm install app-logging
 ## Usage
 
 ```python
-import { Log } from 'app-logging'
+const AppLog = require('app-logging').Log;
 
-const logging = new Log();
+const log = new AppLog();
 
 # Writing Info Logs
-logging.info('info message', 'contextual-data');
+log.info('info message', 'contextual-data');
 
 # Writing Error Logs
-logging.error('error message', 'contextual-data');
+log.error('error message', 'contextual-data');
 
 # Writing Debug Logs
-logging.info('debug message', 'contextual-data');
+log.info('debug message', 'contextual-data');
 
 # Writing Warning Logs
-logging.info('warning message', 'contextual-data');
+log.info('warning message', 'contextual-data');
 
 # Writing Critical Logs
-logging.info('critical message', 'contextual-data');
+log.info('critical message', 'contextual-data');
 
 # Writing Emergency Logs
-logging.info('emergency message', 'contextual-data');
+log.info('emergency message', 'contextual-data');
 
 # Writing Notice Logs
-logging.info('notice message', 'contextual-data');
+log.info('notice message', 'contextual-data');
 
 # Writing Alert Logs
-logging.info('alert message', 'contextual-data');
+log.info('alert message', 'contextual-data');
+```
+
+### With TypeScript
+
+```python
+import { Log } from 'app-logging'
+
+const log = new Log();
+
+# Writing Info Logs
+log.info('info message', 'contextual-data');
+
+# Writing Error Logs
+log.error('error message', 'contextual-data');
+
+# Writing Debug Logs
+log.info('debug message', 'contextual-data');
+
+# Writing Warning Logs
+log.info('warning message', 'contextual-data');
+
+# Writing Critical Logs
+log.info('critical message', 'contextual-data');
+
+# Writing Emergency Logs
+log.info('emergency message', 'contextual-data');
+
+# Writing Notice Logs
+log.info('notice message', 'contextual-data');
+
+# Writing Alert Logs
+log.info('alert message', 'contextual-data');
 ```
 
 ## Contributing
