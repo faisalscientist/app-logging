@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 
 const storagePath = process.env.PWD + '/storage';
-export class Log {
+export default class Log {
   public info = (message: string, contextualData: any, async: boolean = false) => {
     this.executeLogs(message, contextualData, async, 'INFO');
   }
