@@ -1,6 +1,6 @@
 {
   "name": "app-logging",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Application development logs",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
