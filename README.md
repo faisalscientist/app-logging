@@ -7,48 +7,24 @@ app-logging is a javascript log package that helps you write logs in your applic
 Use the package manager [npm](https://www.npmjs.com/package/app-logging) to install app-logging.
 
 ```bash
-npm install app-logging
+npm i app-logging
 ```
 
 ## Usage
 
+### Import
+
 ```python
 const AppLog = require('app-logging').Log;
-
-const log = new AppLog();
-
-# Writing Info Logs
-log.info('info message', 'contextual-data');
-
-# Writing Error Logs
-log.error('error message', 'contextual-data');
-
-# Writing Debug Logs
-log.info('debug message', 'contextual-data');
-
-# Writing Warning Logs
-log.info('warning message', 'contextual-data');
-
-# Writing Critical Logs
-log.info('critical message', 'contextual-data');
-
-# Writing Emergency Logs
-log.info('emergency message', 'contextual-data');
-
-# Writing Notice Logs
-log.info('notice message', 'contextual-data');
-
-# Writing Alert Logs
-log.info('alert message', 'contextual-data');
-```
-
-### With TypeScript
-
-```python
+## Typescript
 import { Log } from 'app-logging'
 
-const log = new Log();
+## Initializing
+const log = new AppLog();
 
+```
+
+```python
 # Writing Info Logs
 log.info('info message', 'contextual-data');
 
@@ -56,22 +32,23 @@ log.info('info message', 'contextual-data');
 log.error('error message', 'contextual-data');
 
 # Writing Debug Logs
-log.info('debug message', 'contextual-data');
+log.debug('debug message', 'contextual-data');
 
 # Writing Warning Logs
-log.info('warning message', 'contextual-data');
+log.warning('warning message', 'contextual-data');
 
 # Writing Critical Logs
-log.info('critical message', 'contextual-data');
+log. critical('critical message', 'contextual-data');
 
 # Writing Emergency Logs
-log.info('emergency message', 'contextual-data');
+log.emergency('emergency message', 'contextual-data');
 
 # Writing Notice Logs
-log.info('notice message', 'contextual-data');
+log.notice('notice message', 'contextual-data');
 
 # Writing Alert Logs
-log.info('alert message', 'contextual-data');
+log.alert('alert message', 'contextual-data');
+
 ```
 
 ## Contributing
