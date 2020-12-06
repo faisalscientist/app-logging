@@ -4,7 +4,7 @@ app-logging is a javascript log package that helps you write logs in your applic
 
 ## Installation
 
-Use the package manager [npm](https://www.npmjs.com/package/app-logging) to install foobar.
+Use the package manager [npm](https://www.npmjs.com/package/app-logging) to install app-logging.
 
 ```bash
 npm install app-logging
